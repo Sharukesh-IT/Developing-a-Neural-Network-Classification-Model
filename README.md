@@ -28,6 +28,7 @@ Train the model using CrossEntropyLoss and Adam optimizer by performing forward 
 ### STEP 6: 
 Evaluate the trained model on test data using accuracy, confusion matrix, and classification report, and perform prediction on a sample input.
 ## PROGRAM
+```
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -136,8 +137,8 @@ with torch.no_grad():
 accuracy = accuracy_score(actuals, predictions)
 conf_matrix = confusion_matrix(actuals, predictions)
 class_report = classification_report(actuals, predictions, target_names=[str(i) for i in label_encoder.classes_])
-print("Name: Syed Mohamed Raihan M")
-print("Register No:212224240167")
+print("Name: SUDHARSAN S")
+print("Register No:212224040335")
 print(f'Test Accuracy: {accuracy:.2f}%')
 print("Confusion Matrix:\n", conf_matrix)
 print("Classification Report:\n", class_report)
@@ -157,8 +158,8 @@ with torch.no_grad():
     # Select the prediction for the sample (first element)
     predicted_class_index = torch.argmax(output[0]).item()
     predicted_class_label = label_encoder.inverse_transform([predicted_class_index])[0]
-print("Name: Syed Mohamed Raihan M")
-print("Register No:212224240167")
+print("Name: SUDHARSAN S")
+print("Register No:212224040335")
 print(f'Predicted class for sample input: {predicted_class_label}')
 print(f'Actual class for sample input: {label_encoder.inverse_transform([y_test[12].item()])[0]}')```
 
